@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/backgroundwallpaper"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg1"
+    tools:context=".Home">
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toStartOf="@+id/constraintLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/mainPart"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/einkaufenbtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    app:layout_constraintEnd_toStartOf="@+id/familiebtn"
+                    app:layout_constraintStart_toEndOf="@+id/essenbtn"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@mipmap/einkaufenlogo" />
+
+                <ImageView
+                    android:id="@+id/calenderbtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    app:layout_constraintEnd_toStartOf="@+id/moneybtn"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/essenbtn"
+                    app:srcCompat="@mipmap/calendarlogo" />
+
+                <ImageView
+                    android:id="@+id/notizenbtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/familiebtn"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@mipmap/notizenlogo" />
+
+                <ImageView
+                    android:id="@+id/familiebtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    app:layout_constraintEnd_toStartOf="@+id/notizenbtn"
+                    app:layout_constraintStart_toEndOf="@+id/einkaufenbtn"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@mipmap/familie" />
+
+                <ImageView
+                    android:id="@+id/essenbtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    app:layout_constraintEnd_toStartOf="@+id/einkaufenbtn"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@mipmap/foodlogo" />
+
+                <ImageView
+                    android:id="@+id/moneybtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    app:layout_constraintEnd_toStartOf="@+id/musicbtn"
+                    app:layout_constraintStart_toEndOf="@+id/calenderbtn"
+                    app:layout_constraintTop_toBottomOf="@+id/einkaufenbtn"
+                    app:srcCompat="@mipmap/moneylogo" />
+
+                <ImageView
+                    android:id="@+id/musicbtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    app:layout_constraintEnd_toStartOf="@+id/tvbtn"
+                    app:layout_constraintStart_toEndOf="@+id/moneybtn"
+                    app:layout_constraintTop_toBottomOf="@+id/familiebtn"
+                    app:srcCompat="@mipmap/musiclogo" />
+
+                <ImageView
+                    android:id="@+id/tvbtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/musicbtn"
+                    app:layout_constraintTop_toBottomOf="@+id/notizenbtn"
+                    app:srcCompat="@mipmap/tvlogo" />
+
+                <ImageView
+                    android:id="@+id/settingsbtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    app:layout_constraintEnd_toStartOf="@+id/gamesbtn"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/calenderbtn"
+                    app:srcCompat="@mipmap/settingslogo" />
+
+                <ImageView
+                    android:id="@+id/gamesbtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    app:layout_constraintEnd_toStartOf="@+id/sirenebtn"
+                    app:layout_constraintStart_toEndOf="@+id/settingsbtn"
+                    app:layout_constraintTop_toBottomOf="@+id/moneybtn"
+                    app:srcCompat="@mipmap/gameslogo" />
+
+                <ImageView
+                    android:id="@+id/sirenebtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    app:layout_constraintEnd_toStartOf="@+id/carbtn"
+                    app:layout_constraintStart_toEndOf="@+id/gamesbtn"
+                    app:layout_constraintTop_toBottomOf="@+id/musicbtn"
+                    app:srcCompat="@mipmap/alarmlogo" />
+
+                <ImageView
+                    android:id="@+id/carbtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/sirenebtn"
+                    app:layout_constraintTop_toBottomOf="@+id/tvbtn"
+                    app:srcCompat="@mipmap/carlogo" />
+
+            </android.support.constraint.ConstraintLayout>
+        </android.support.constraint.ConstraintLayout>
+    </ScrollView>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="222dp"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextClock
+            android:id="@+id/simpleTextClock"
+            android:layout_width="154dp"
+            android:layout_height="44dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/roundedbuttonweis"
+            android:fontFamily="@font/actor"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textSize="30sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/messagebtn" />
+
+        <ImageView
+            android:id="@+id/messagebtn"
+            android:layout_width="112dp"
+            android:layout_height="107dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@mipmap/post" />
+
+        <TextView
+            android:id="@+id/Familienname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="27dp"
+            android:layout_marginEnd="8dp"
+            android:fontFamily="@font/advent_pro_thin"
+            android:textAlignment="center"
+            android:textColor="@color/common_google_signin_btn_text_dark_default"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/simpleTextClock" />
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.constraint.ConstraintLayout>

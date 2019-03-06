@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "230893166591",
+    "firebase_url": "https://familyio-9bcf5.firebaseio.com",
+    "project_id": "familyio-9bcf5",
+    "storage_bucket": "familyio-9bcf5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:230893166591:android:9dbef4dcab8835b8",
+        "android_client_info": {
+          "package_name": "com.qooplite.alpay.familyio"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "230893166591-gfs74021blemc1sshf02vh58hhu3rm0u.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.qooplite.alpay.familyio",
+            "certificate_hash": "6a8a5656a3f8627f35658b05658dc51d24a49870"
+          }
+        },
+        {
+          "client_id": "230893166591-2vs3c241qsre5tstpphe9ker3p22bndd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAZKoUfQVz6EAcMR7OVz4oMcW198xjWPkg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "230893166591-2vs3c241qsre5tstpphe9ker3p22bndd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

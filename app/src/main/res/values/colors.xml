@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#000000</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#000000</color>
+    <color name="dark">#3A3A3A</color>
+    <color name="whiteisch">#F5F5F5</color>
+    <color name="weichblau">#FFFFFF</color>
+    <color name="Farbe1">#E8E1C3</color>
+    <color name="Farbe2">#81FFC0</color>
+    <color name="Farbe3">#FF7075</color>
+    <color name="Farbe4">#718BE8</color>
+    <color name="Farbe5">#73FF76</color>
+</resources>
