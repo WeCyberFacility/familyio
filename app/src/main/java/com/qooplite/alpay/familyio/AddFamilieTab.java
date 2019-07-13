@@ -99,6 +99,7 @@ public class AddFamilieTab extends AppCompatActivity {
                     public void run() {
                         // Do something after 5s = 5000ms
 
+                        aktivierungscodeEingeben();
                         checkActivation();
 
 
@@ -107,6 +108,20 @@ public class AddFamilieTab extends AppCompatActivity {
 
             }
         });
+
+
+    }
+
+
+    public void aktivierungscodeEingeben(){
+
+        // Write a message to the database
+        FirebaseDatabase database = FirebaseDatabase.getInstance();
+        final DatabaseReference myRef = database.getReference("Aktivierungscodes");
+
+        Aktivierungscode neu = new Aktivierungscode("1234", "");
+
+        myRef.child("1234").setValue(neu);
 
 
     }
@@ -216,6 +231,8 @@ public class AddFamilieTab extends AppCompatActivity {
 
                 @Override
                 public void onCancelled(@NonNull DatabaseError databaseError) {
+
+                    System.out.println("Abgebrochen!");
 
                 }
             });

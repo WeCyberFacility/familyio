@@ -77,7 +77,7 @@ public class Home extends AppCompatActivity {
         gamesBtn = findViewById(R.id.gamesbtn);
         sireneBtn = findViewById(R.id.sirenebtn);
         carBtn = findViewById(R.id.carbtn);
-        familienname = findViewById(R.id.Familienname);
+        familienname = findViewById(R.id.familienname);
         backgroundWallpaper = findViewById(R.id.backgroundwallpaper);
 
 

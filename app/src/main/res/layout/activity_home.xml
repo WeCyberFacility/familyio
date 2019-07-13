@@ -5,7 +5,7 @@
     android:id="@+id/backgroundwallpaper"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@mipmap/bg1"
+    android:background="@color/Farbe7"
     tools:context=".Home">
 
     <ScrollView
@@ -183,21 +183,61 @@
         android:layout_height="match_parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/fastright"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/rightbg"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView4"
+            app:layout_constraintVertical_bias="0.0">
+
+        </android.support.constraint.ConstraintLayout>
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="53dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="24dp"
+            app:layout_constraintBottom_toBottomOf="@+id/fastright"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/logoutlogo" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/familienname"
+            app:layout_constraintTop_toBottomOf="@+id/messagebtn"
+            app:srcCompat="@drawable/clocklogo" />
 
         <TextClock
-            android:id="@+id/simpleTextClock"
-            android:layout_width="154dp"
-            android:layout_height="44dp"
+            android:id="@+id/familienname"
+            android:layout_width="102dp"
+            android:layout_height="36dp"
             android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="16dp"
             android:layout_marginEnd="8dp"
-            android:background="@drawable/roundedbuttonweis"
-            android:fontFamily="@font/actor"
+            android:background="@drawable/clockrectangle"
+            android:fontFamily="@font/advent_pro_light"
             android:textAlignment="center"
             android:textColor="@color/colorPrimary"
-            android:textSize="30sp"
-            app:layout_constraintEnd_toEndOf="parent"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toStartOf="@+id/imageView4"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/messagebtn" />
 
@@ -211,20 +251,6 @@
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@mipmap/post" />
 
-        <TextView
-            android:id="@+id/Familienname"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="27dp"
-            android:layout_marginEnd="8dp"
-            android:fontFamily="@font/advent_pro_thin"
-            android:textAlignment="center"
-            android:textColor="@color/common_google_signin_btn_text_dark_default"
-            android:textSize="24sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/simpleTextClock" />
     </android.support.constraint.ConstraintLayout>
 
 </android.support.constraint.ConstraintLayout>

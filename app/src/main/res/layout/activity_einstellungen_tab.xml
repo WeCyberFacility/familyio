@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".EinstellungenTab"
-    android:background="@color/whiteisch">
+    android:background="@color/Farbe7">
 
     <ImageView
         android:id="@+id/backbtneinstellungen"
